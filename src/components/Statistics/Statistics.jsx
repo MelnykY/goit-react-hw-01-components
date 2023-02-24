@@ -9,7 +9,7 @@ import {
 export function Statistics({ title = 'Upload stats', stats }) {
   return (
     <SectionStat>
-      <StatTitle>{title}</StatTitle>
+     {title && <StatTitle>{title}</StatTitle>}
       <StatList>
         {stats.map(({ id, label, percentage }) => (
           <StatItem key={id}>
